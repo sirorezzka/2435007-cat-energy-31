@@ -7,7 +7,7 @@
       "density": "4.0"
     },
     {
-      "src": "favicons/512x512.png",
+      "src": "favicons/152x152.png",
       "sizes": "152x152",
       "type": "image/png",
       "density": "4.0"
@@ -15,6 +15,12 @@
     {
       "src": "favicons/180x180.png",
       "sizes": "180x180",
+      "type": "image/png",
+      "density": "4.0"
+    },
+    {
+      "src": "favicons/512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "density": "4.0"
     }
