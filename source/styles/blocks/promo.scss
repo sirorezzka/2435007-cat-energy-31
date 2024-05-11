@@ -1,0 +1,11 @@
+.promo {
+  background-color: $tertiary-bg;
+  opacity: 0.85;
+}
+
+.promo__description {
+  font-family: $primary-font;
+  font-size: $font-size;
+  line-height: 20px;
+  color: white;
+}
