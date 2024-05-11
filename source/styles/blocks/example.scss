@@ -1,0 +1,38 @@
+
+.example {
+  background-color: $secondary-bg;
+}
+
+.example__title {
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: $line-height;
+  color: $primary-color;
+}
+
+.example__item-header {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.example__item-text {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $primary-color;
+}
+
+.example__price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color;
+  text-transform: uppercase;
+}

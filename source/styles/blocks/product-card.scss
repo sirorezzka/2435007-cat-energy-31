@@ -1,0 +1,26 @@
+.product-card {
+  background-color: $primary-bg;
+}
+
+.product-card__title {
+  font-family: $secondary-font;
+  font-size: $font-size;
+  line-height: 20px;
+  color: $quaternary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-card__options {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $primary-color;
+}
+
+.product-card__text {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $primary-color;
+}
