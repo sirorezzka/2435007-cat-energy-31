@@ -1,3 +1,36 @@
-.nav {
-  color: #ff0000;
+.nav__list {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $secondary-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+.nav__button {
+  background-image: url("../../icons/stack.svg#burger");
+  background-color: $primary-bg;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.nav__button--close {
+  background-image: url("../../icons/stack.svg#close-mobile");
 }

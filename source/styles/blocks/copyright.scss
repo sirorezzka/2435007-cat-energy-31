@@ -1,0 +1,32 @@
+.copyright {
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    background-color: $slider-color;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html");
+    mask-position: 100%;
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $tertiary-bg;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 0.3);
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-family: $primary-font;
+  font-size: $font-size;
+  line-height: 20px;
+  color: $primary-color;
+}

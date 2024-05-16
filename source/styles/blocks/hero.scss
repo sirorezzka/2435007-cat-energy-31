@@ -1,5 +1,24 @@
+.hero__content {
+  background-color: $tertiary-bg;
+  // opacity: 0.2;
+  height: 302px;
+  width: 100%;
+}
+
+.hero__baner {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url("../../images/hero-background-cat@1x.png");
+  background-size: cover;
+  width: 100%;
+}
+
 .hero__title {
-  color: white;
+  color: #ffffff;
+
+  @media (min-width: $tablet) {
+    color: $secondary-color;
+  }
 }
 
 .hero__text {
@@ -8,4 +27,11 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $secondary-color;
+  }
 }
+

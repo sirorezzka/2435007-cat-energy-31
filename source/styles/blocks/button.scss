@@ -1,0 +1,14 @@
+.button {
+  font-family: $secondary-font;
+  font-size: $font-size;
+  color: $button-color-text;
+  text-transform: uppercase;
+  background-color: $button-bg;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.button--accent {
+  background-color: $secondary-bg;
+  color: $button-color-accient;
+}

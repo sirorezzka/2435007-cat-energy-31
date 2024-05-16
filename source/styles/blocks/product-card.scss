@@ -2,6 +2,14 @@
   background-color: $primary-bg;
 }
 
+.product-card__content {
+
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
 .product-card__title {
   font-family: $secondary-font;
   font-size: $font-size;
@@ -9,6 +17,11 @@
   color: $quaternary-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product-card__options {
@@ -16,6 +29,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .product-card__text {
@@ -23,4 +41,9 @@
   font-size: 12px;
   line-height: 16px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

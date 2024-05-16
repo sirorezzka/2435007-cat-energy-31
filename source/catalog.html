@@ -17,13 +17,13 @@
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <picture>
-            <source media="(min-width:1200px)" width="70" height="59" srcset="icons/logo-desktop.svg" type="image/svg+xml">
-            <source media="(min-width:768px)" width="60" height="50" srcset="icons/logo-tablet.svg" type="image/svg+xml">
-            <img class="logo__icon" src="icons/logo-mobile.svg" width="118" height="21" alt="Кэт Энерджи.">
+            <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
+            <source media="(min-width:768px)" width="60" height="50" srcset="images/logo-tablet.svg" type="image/svg+xml">
+            <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Кэт Энерджи.">
           </picture>
-          <img class="logo__text" src="icons/footer-logo2.svg" width="101" height="18" alt="Cat Energy.">
+          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy.">
         </a>
         <div class="navigation">
           <ul class="nav__list">
@@ -58,7 +58,7 @@
                 500 г., Курица">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>PRO 500 г</h3>
             </a>
             <div class="product-card__options">
@@ -88,7 +88,7 @@
                 1000 г., Курица.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>PRO 1000 г</h3>
             </a>
             <div class="product-card__options">
@@ -118,7 +118,7 @@
                 500 г., Рыба.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>PRO 500 г</h3>
             </a>
             <div class="product-card__options">
@@ -148,7 +148,7 @@
                 1000 г., Рыба.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>PRO 500 г</h3>
             </a>
             <div class="product-card__options">
@@ -178,7 +178,7 @@
                 500 г., Гречка.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>SLIM 500 г</h3>
             </a>
             <div class="product-card__options">
@@ -208,7 +208,7 @@
                 1000 г., Гречка.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>SLIM 1000 г</h3>
             </a>
             <div class="product-card__options">
@@ -238,7 +238,7 @@
                 500 г., Рис.">
               </picture>
             </a>
-            <a href="#">
+            <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy<br>SLIM 500 г</h3>
             </a>
             <div class="product-card__options">
@@ -259,11 +259,10 @@
           <a class="catalog__button button button--secondary" href="#">Заказать</a>
         </li>
         <li class="catalog__item product-card card-add">
-          <a href="#">
-            <img class="card-image" src="img/index-can.svg" width="68" height="86" alt="Товар.">
+          <a class="product-card__link" href="#">
           </a>
-          <div class="product-card__content">
-            <a href="#">
+          <div class="product-card__content card-add__content">
+            <a class="product-card__link" href="#">
               <h3 class="title-h3 ">Показать еще<br>100500 товаров</h3>
             </a>
             <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
@@ -273,7 +272,7 @@
       </ul>
     </section>
     <section class="additional-products">
-      <a href="#">
+      <a class="additional-products__link" href="#">
         <h2 class="additional-products__title title-h2">Дополнительные товары</h2>
       </a>
       <ul class="additional-products__list">
@@ -317,10 +316,9 @@
     <section class="subscribe">
       <h2 class="subscribe__title title-h2">Акции и новинки</h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscribe__form form" action="https://echo.htmlacademy.ru">
-        <label class="subscribe__label">
-          <input class="form__control" id="email" name="email" value="кuklachev@gmail.com">
-        </label>
+      <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="email">Подписаться на новости</label>
+        <input class="form__control" type="email" id="email" name="email" value="кuklachev@gmail.com" required>
         <a class="subscribe__button button button--primary" href="#">Подписаться</a>
       </form>
     </section>
@@ -340,21 +338,27 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <a href="#"><img class="logo" src="img/icon-logo2.svg" width="128" height="24" alt="Логотип."></a>
+      <a href="#">
+        <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy.">
+      </a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#"><img class="vk" src="img/icon-vk.svg" width="28" height="22" alt="VK."><span class="visually-hidden">Мы в вконтакте</span></a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы в вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><img class="youtube" src="img/icon-youtube.svg" width="28" height="22" alt="youtube."><span class="visually-hidden">Мы на Ютубе</span></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы на Ютубе</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><img class="telegramm" src="img/icon-telegramm.svg" width="28" height="22" alt="telegramm."><span class="visually-hidden">Мы в телеграме</span></a>
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы в телеграме</span></a>
         </li>
       </ul>
-      <a class="copyright" href="#">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__logo" src="icons/logo_html.svg" width="101" height="18" alt="Cat Energy.">
       </a>
     </div>
   </footer>

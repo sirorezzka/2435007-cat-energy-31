@@ -12,14 +12,14 @@
 @import "./blocks/title-h1.scss";
 @import "./blocks/title-h2.scss";
 @import "./blocks/title-h3.scss";
+@import "./blocks/button.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/logo.scss";
-
 @import "./blocks/hero.scss";
-@import "./blocks/button.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/instructions.scss";
 @import "./blocks/example.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
@@ -30,3 +30,19 @@
 @import "./blocks/promo.scss";
 @import "./blocks/subscribe.scss";
 @import "./blocks/form.scss";
+
+
+.card-add__content {
+  &::before {
+    content: "";
+    background-color: #d3d3d3;
+    width: 30px;
+    height: 30px;
+    mask-image: url("../../icons/stack.svg#plus");
+    mask-position: 100%;
+    mask-size: 30px 30px;
+    mask-repeat: no-repeat;
+    display: block;
+  }
+
+}

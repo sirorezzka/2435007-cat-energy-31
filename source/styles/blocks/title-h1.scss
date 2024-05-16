@@ -3,4 +3,9 @@
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

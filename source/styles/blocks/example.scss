@@ -12,6 +12,15 @@
   font-size: 14px;
   line-height: $line-height;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.example__item {
+  list-style-type: none;
 }
 
 .example__item-header {
@@ -20,6 +29,11 @@
   line-height: 24px;
   color: $secondary-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item-text {
@@ -27,6 +41,11 @@
   font-size: 12px;
   line-height: 12px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__price {
@@ -35,4 +54,8 @@
   line-height: 20px;
   color: $secondary-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }

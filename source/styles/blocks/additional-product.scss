@@ -7,4 +7,10 @@
   font-size: 14px;
   line-height: 14px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20 px;
+  }
 }
+
