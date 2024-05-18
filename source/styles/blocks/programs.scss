@@ -8,10 +8,10 @@
 }
 
 .programs__item::before {
-  background-color: $tertiary-bg;
+  // background-color: $tertiary-bg;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 50px;
+  // border-radius: 50px;
   width: 50px;
   height: 50px;
   display: block;
@@ -20,16 +20,16 @@
 .programs__item--slim::before {
   content: "";
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-image: url("../../icons/stack.svg#icon-cat");
-  background-size: 37px 50px;
+  background-position: cover;
+  background-image: url("../../icons/stack.svg#cat");
+  // background-size: 37px 50px;
 }
 
 .programs__item--fat::before {
   content: "";
   background-repeat: no-repeat;
   background-position: 50%;
-  background-image: url("../../icons/stack.svg#icon-gepard");
+  background-image: url("../../icons/stack.svg#gepard");
   background-size: 67px 28px;
 }
 
