@@ -5,20 +5,64 @@
 
 .programs__item {
   background-color: $secondary-bg;
-}
 
-.programs_item-link {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
-  color: $secondary-color;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+  &--slim {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: cover;
+      background-image: url("../../icons/stack.svg#cat");
+      background-size: 50px 53px;
+      width: 50px;
+      height: 53px;
+      display: block;
+    }
+  }
 
-.programs__item-text {
-  font-family: $primary-font;
-  font-size: 14px;
-  line-height: 18px;
-  color: $primary-color;
+  &--fat {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url("../../icons/stack.svg#gepard");
+      background-size: 67px 50px;
+      width: 67px;
+      height: 50px;
+      display: block;
+    }
+  }
+
+  .programs__item-link {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    line-height: 16px;
+    color: $secondary-color;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      background-color: $secondary-color;
+      width: 24px;
+      height: 12px;
+      // transition: background-color 0.3s linear, color 0.3s linear;
+      mask-image: url("../../icons/stack.svg#arrow");
+      mask-position: 100%;
+      mask-size: 24px 12px;
+      mask-repeat: no-repeat;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+
+  .programs__item-text {
+    @media (min-width: $tablet) {
+      color: $secondary-color;
+    }
+  }
 }

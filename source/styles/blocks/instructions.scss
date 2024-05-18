@@ -2,9 +2,65 @@
   background-color: $primary-bg;
 }
 
-.instructions__item-text {
-  font-family: $primary-font;
-  font-size: 14px;
-  line-height: $line-height;
-  color: $primary-color;
+.instructions__list {
+  list-style-type: none;
 }
+
+.instructions__item-text {
+  @media (min-width: $tablet) {
+    // line-height: 24px;
+  }
+}
+
+.instructions__item {
+  &::before {
+    content: "";
+    background-color: $accient-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+
+  &--useful {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url("../../icons/stack.svg#icon-leaf");
+      background-size: 30px 32px;
+    }
+  }
+
+  &--powder {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url("../../icons/stack.svg#icon-powder");
+      background-size: 30px 32px;
+    }
+  }
+
+  &--meal {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url("../../icons/stack.svg#icon-eat");
+      background-size: 30px 32px;
+    }
+  }
+
+  &--good {
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url("../../icons/stack.svg#icon-time");
+      background-size: 30px 32px;
+    }
+  }
+}
+

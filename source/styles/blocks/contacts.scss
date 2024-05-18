@@ -1,14 +1,13 @@
-.contacts_container {
-  background-color: $primary-bg;
-}
-
 .contacts__description {
-  font-family: $primary-font;
-  font-size: 14px;
+  font-family: $primary-font-family;
   line-height: 20px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    // font-size: 16px; надо удалить
+  }
 }
 
-.contacts_container--secondary {
+.contacts__container--secondary {
   background-color: $secondary-bg;
 }
