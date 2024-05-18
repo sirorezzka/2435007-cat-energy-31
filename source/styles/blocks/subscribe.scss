@@ -1,10 +1,25 @@
 .subscribe__title {
   text-transform: none;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 4px;
+  }
 }
 
 .subscribe__description {
-  font-family: $secondary-font;
-  font-size: $font-size;
+  font-family: $secondary-font-family;
+  font-size: 16px;
   line-height: 24px;
   color: $secondary-color;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }

@@ -1,0 +1,39 @@
+.copyright {
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    background-color: $slider-color;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html");
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: $accient-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: rgba(104, 183, 56, 0.3);
+    }
+  }
+}
+
+.copyright__text {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-color;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

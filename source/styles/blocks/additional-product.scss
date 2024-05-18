@@ -3,8 +3,11 @@
 }
 
 .additional-product__content {
-  font-family: $primary-font;
-  font-size: 14px;
+  font-family: $primary-font-family;
   line-height: 14px;
   color: $primary-color;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+  }
 }

@@ -1,15 +1,28 @@
 /* здесь используйте глобальные переменные */
-$primary-font: "Lato",sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$primary-font-family: "Lato",sans-serif;
+$secondary-font-family: "Oswald", sans-serif;
+
+/* Цвета фона */
 $primary-bg: #ffffff;
 $secondary-bg: #f2f2f2;
-$tertiary-bg: #68b738;
-$font-size: 16px;
-$font-weight: 400;
-$line-height: 18px;
+$accient-bg: #eaeaea;
+
+/* Цвета проекта */
 $primary-color: #444444;
 $secondary-color: #000000;
 $tertiary-color: #111111;
 $quaternary-color: #222222;
-$button-bg: #68b738;
-$button-color-text: #ffffff;
+$slider-color: #666666;
+$accient-color: #68b738;
+
+/* Цвета бордеров */
+$primary-border-color: #d9d9d9;
+$secondary-border-color: #cdcdcd;
+$tertiary-border-color: #e6e6e6;
+$primary-border: 1px solid $primary-border-color;
+$secondary-border: 1px solid $secondary-border-color;
+$tertiary-border: 1px solid $tertiary-border-color;
+$accient-border: 1px solid $accient-color;
+
+$tablet: 768px;
+$desktop: 1440px;

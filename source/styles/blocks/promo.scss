@@ -1,11 +1,26 @@
 .promo {
-  background-color: $tertiary-bg;
-  opacity: 0.85;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(#68B738D9, #68b738d9), url("../../images/promo-mobile@1x.png"), linear-gradient(#68b738, #68b738);
+  background-size: contain, cover;
+  width: 100%;
+  height: 290px;
+  z-index: -1;
 }
 
 .promo__description {
-  font-family: $primary-font;
-  font-size: $font-size;
+  font-family: $primary-font-family;
+  font-size: 16px;
   line-height: 20px;
-  color: white;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("../../icons/stack.svg#icon-gift");
+    width: 78px;
+    height: 80px;
+    display: block;
+  }
 }
