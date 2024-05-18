@@ -1,0 +1,14 @@
+.contacts_container {
+  background-color: $primary-bg;
+}
+
+.contacts__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-color;
+}
+
+.contacts_container--secondary {
+  background-color: $secondary-bg;
+}
