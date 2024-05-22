@@ -4,22 +4,36 @@
 
 .instructions__list {
   list-style-type: none;
-}
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 
-.instructions__item-text {
   @media (min-width: $tablet) {
-    // line-height: 24px;
+    flex-direction: row;
+    flex-flow: row wrap;
   }
 }
 
 .instructions__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    height: 280px;
+    width: 249px;
+  }
+
+
   &::before {
     content: "";
     background-color: $accient-color;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    max-height: 60px;
     display: block;
   }
 
