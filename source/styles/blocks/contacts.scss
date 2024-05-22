@@ -1,13 +1,20 @@
+.contacts__container {
+  padding: 26px;
+  background-color: $primary-bg;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding: 60px 10px;
+  }
+}
+
 .contacts__description {
   font-family: $primary-font-family;
   line-height: 20px;
   color: $primary-color;
-
-  @media (min-width: $tablet) {
-    // font-size: 16px; надо удалить
-  }
 }
 
-.contacts__container--secondary {
-  background-color: $secondary-bg;
+.contacts__image {
+  width: 100%;
 }

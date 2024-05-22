@@ -1,23 +1,88 @@
+.nav {
+  width: 100%;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .nav__list {
   font-family: $secondary-font-family;
   font-size: 20px;
   line-height: 20px;
   color: $secondary-color;
   text-transform: uppercase;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 45px;
+  }
+
+  &--open {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $primary-bg;
+    z-index: 2;
+    width: 100vw;
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.nav__item {
+  border-top: $tertiary-border;
+  padding: 22px 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    border: none;
+    display: inline-block;
+    margin-left: 23px;
+    padding: 10px 0;
+  }
+
+  &--current {
+    border-bottom: 2px solid $accient-color;
   }
 }
 
 .nav__link {
   text-decoration: none;
   color: $secondary-color;
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }
 
 .nav__button {
@@ -31,6 +96,10 @@
 
   &--close {
     background-image: url("../../icons/stack.svg#close-mobile");
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 

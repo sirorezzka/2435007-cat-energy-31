@@ -15,49 +15,52 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
+  <header class="header ">
+    <nav class="nav container">
+      <div class="nav__container  ">
         <a class="logo" href="#">
           <picture>
             <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
             <source media="(min-width:768px)" width="60" height="50" srcset="images/logo-tablet.svg" type="image/svg+xml">
             <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Кэт Энерджи.">
           </picture>
+        </a>
+        <a class="logo" href="#">
           <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy.">
         </a>
         <button class="nav__button nav__button--close" type="button">
           <span class="visually-hidden">Переключение меню</span>
         </button>
-        <div class="navigation">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--current">
-              <a class="nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      </div>
+      <div class="nav__navigation">
+        <!-- nav__list--open -->
+        <ul class="nav__list  ">
+          <li class="nav__item nav__item--current">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="main-container">
     <section class="hero">
-      <div class="container">
-        <div class="hero__content hero__banner">
-          <h1 class="hero__title title-h1">Функциональное питание для котов</h1>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
-        </div>
-        <picture>
-          <source media="(min-width:1200px)" width="552" height="499" srcset="images/hero-product@1x.png 1x, images/hero-product@2x.png 2x" type="image/png">
-          <source media="(min-width:768px)" width="709" height="609" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png">
-          <img class="hero__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Кэт Энерджи.">
-        </picture>
-        <a class="hero__button button button--primary" href="#">Подобрать программу</a>
+      <div class="hero__content hero__banner">
+        <h1 class="hero__title title-h1 container">Функциональное питание для котов</h1>
+        <p class="hero__text container">Занялся собой? Займись котом!</p>
+      </div>
+      <picture>
+        <source media="(min-width:1200px)" width="552" height="499" srcset="images/hero-product@1x.png 1x, images/hero-product@2x.png 2x" type="image/png">
+        <source media="(min-width:768px)" width="709" height="609" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png">
+        <img class="hero__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Кэт Энерджи.">
+      </picture>
+      <div class="hero__content container ">
+        <a class="hero__button button button--primary " href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -82,7 +85,7 @@
       </div>
     </section>
     <section class="instructions">
-      <h2 class="instructions__title title-h1">Как это работает</h2>
+      <h2 class="instructions__title title-h1 container">Как это работает</h2>
       <div class="container">
         <ul class="instructions__list">
           <li class="instructions__item instructions__item--useful">
@@ -108,43 +111,45 @@
       </div>
     </section>
     <section class="example">
-      <h2 class="example__title title-h1">Живой пример</h2>
       <div class="container">
+        <h2 class="example__title title-h1">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="example__list">
-          <li class="example__item">
-            <p class="example__item-header">5 КГ</p>
-            <p class="example__item-text">Снижение веса</p>
-          </li>
-          <li class="example__item">
-            <p class="example__item-header">60 дней</p>
-            <p class="example__item-text">Затрачено времени</p>
-          </li>
-        </ul>
-        <div class="example__price">
-          <span>Затраты на питание:</span>
-          <span>15 000 РУБ.</span>
+        <div class="example__content">
+          <ul class="example__list">
+            <li class="example__item">
+              <p class="example__item-header">5 КГ</p>
+              <p class="example__item-text">Снижение веса</p>
+            </li>
+            <li class="example__item">
+              <p class="example__item-header">60 дней</p>
+              <p class="example__item-text">Затрачено времени</p>
+            </li>
+          </ul>
+          <div class="example__price">
+            <span>Затраты на питание:</span>
+            <span>15 000 РУБ.</span>
+          </div>
         </div>
-        <div class="example__slider slider">
-          <picture>
-            <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
-            <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
-            <img class="example__slider-image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
-          </picture>
-          <picture>
-            <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
-            <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
-            <img class="example__slider-image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
-          </picture>
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Ползунок слайдера</span>
-          </button>
-        </div>
+      </div>
+      <div class="example__slider slider">
+        <picture>
+          <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
+          <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
+          <img class="example__slider-image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
+        </picture>
+        <picture>
+          <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
+          <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
+          <img class="example__slider-image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+        </picture>
+        <button class="slider__button" type="button">
+          <span class="visually-hidden">Ползунок слайдера</span>
+        </button>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts_container container">
+      <div class="contacts__container container">
         <div class="contacts__title title-h3">Приглашаем к сотрудничеству дилеров!</div>
         <div class="contacts__description">ул. Большая
           Конюшенная, д. 19/8, Санкт-Петербург</div>
