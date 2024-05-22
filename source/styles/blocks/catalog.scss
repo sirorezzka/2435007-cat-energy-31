@@ -1,3 +1,26 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .catalog__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 80px 63px;
+  }
 }
+
+// .catalog__item {
+//   @media (min-width: $tablet) {
+//     padding: 0 37px 40px;
+//   }
+// }
