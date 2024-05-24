@@ -17,7 +17,7 @@
 <body class="page__body">
   <header class="header ">
     <nav class="nav container">
-      <div class="nav__container  ">
+      <div class="nav__container">
         <a class="logo" href="#">
           <picture>
             <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
@@ -34,7 +34,7 @@
       </div>
       <div class="nav__navigation">
         <!-- nav__list--open -->
-        <ul class="nav__list  ">
+        <ul class="nav__list ">
           <li class="nav__item nav__item--current">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -64,8 +64,8 @@
       </div>
     </section>
     <section class="programs">
-      <h2 class="visually-hidden">Выбор программы</h2>
-      <div class="container">
+      <div class="programs__container container">
+        <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="programs__list">
           <li class="programs__item programs__item--slim">
             <h3 class="programs__item-header title-h2">Похудение</h3>
@@ -163,13 +163,11 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo" href="index.html">
         <span class="visually-hidden">Логотип Cat Energy</span>
-        <svg class="footer__logo-text" role="img" width="128" height="24">
-          <use href="icons/stack.svg#footer-logo"></use>
-        </svg>
+        <img src="images/footer-logo.svg" width="128" height="24" alt="Кэт энерджи.">
       </a>
-      <ul class="social">
+      <ul class="social container">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Мы в вконтакте</span>

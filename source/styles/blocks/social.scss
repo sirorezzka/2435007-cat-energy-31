@@ -1,6 +1,18 @@
 .social {
   background-color: $secondary-bg;
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  border-top: $primary-border;
+  border-bottom: $primary-border;
+  padding: 20px;
+  gap: 24px;
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    border: 1px solid red;
+  }
 }
 
 .social__link {

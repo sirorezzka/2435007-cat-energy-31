@@ -1,7 +1,10 @@
 .copyright {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-  &::before {
+  &::after {
     content: "";
     background-color: $slider-color;
     width: 27px;
@@ -15,15 +18,19 @@
 
   &:hover,
   &:focus {
-    &::before {
+    &::after {
       background-color: $accient-color;
     }
   }
 
   &:active {
-    &::before {
+    &::after {
       background-color: rgba(104, 183, 56, 0.3);
     }
+  }
+
+  @media (min-width: $tablet) {
+    border: 1px solid blue;
   }
 }
 
