@@ -17,6 +17,8 @@
 }
 
 .footer__logo {
+  width: 100%;
+
   @media (min-width: $tablet) {
     border: 1px solid blue;
   }
