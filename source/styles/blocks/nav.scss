@@ -1,5 +1,5 @@
 .nav {
-  width: 100%;
+  // width: 100%;
   position: relative;
 
   @media (min-width: $tablet) {
@@ -16,10 +16,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px;
+  padding: 13px 0;
 
   @media (min-width: $tablet) {
     display: block;
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 55px 0;
   }
 }
 
@@ -32,16 +37,28 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 2;
+  position: absolute;
+  background-color: $primary-bg;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+
 
   @media (min-width: $tablet) {
+    // top: 30px;
+    left: 36%;
     font-size: 18px;
-    padding-top: 30px;
+    // padding-top: 30px;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 45px;
+    // top: 61px;
+    // left: 55%;
+    background: 0;
   }
 
   &--open {
@@ -67,12 +84,21 @@
   @media (min-width: $tablet) {
     border: none;
     display: inline-block;
-    margin-left: 23px;
+    margin-left: 27px;
     padding: 10px 0;
   }
 
   &--current {
-    border-bottom: 2px solid $accient-color;
+    border-bottom: none;
+
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $accient-color;
+    }
+
+    @media (min-width: $desktop) {
+      border-bottom: 2px solid #ffffff;
+      padding: 8px 0;
+    }
   }
 }
 
@@ -93,6 +119,16 @@
   width: 24px;
   height: 24px;
   border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: none;
+  }
+
 
   &--close {
     background-image: url("../../icons/stack.svg#close-mobile");
