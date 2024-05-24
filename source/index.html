@@ -17,35 +17,29 @@
 <body class="page__body">
   <header class="header ">
     <nav class="nav container">
-      <div class="nav__container">
-        <a class="logo" href="#">
-          <picture>
-            <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
-            <source media="(min-width:768px)" width="60" height="50" srcset="images/logo-tablet.svg" type="image/svg+xml">
-            <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Кэт Энерджи.">
-          </picture>
-        </a>
-        <a class="logo" href="#">
-          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy.">
-        </a>
-        <button class="nav__button nav__button--close" type="button">
-          <span class="visually-hidden">Переключение меню</span>
-        </button>
-      </div>
-      <div class="nav__navigation">
-        <!-- nav__list--open -->
-        <ul class="nav__list ">
-          <li class="nav__item nav__item--current">
-            <a class="nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <a class="logo" href="#">
+        <picture>
+          <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
+          <source media="(min-width:768px)" width="60" height="50" srcset="images/logo-tablet.svg" type="image/svg+xml">
+          <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Кэт Энерджи.">
+        </picture>
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy.">
+      </a>
+      <button class="nav__button nav__button--close" type="button">
+        <span class="visually-hidden">Переключение меню</span>
+      </button>
+      <!-- nav__list--open -->
+      <ul class="nav__list nav__list--open">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current" href="index.html">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">

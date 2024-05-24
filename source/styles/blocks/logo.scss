@@ -1,18 +1,26 @@
 .logo {
-  // @media (min-width: $tablet) {
-  //   padding-top: 30px;
-  // }
+  display: flex;
+  // flex-flow: nowrap;
+  flex-grow: 1;
+  margin: 0;
 
-  // @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
+    max-width: 174px;
+    justify-content: space-between;
+  }
 
-  //   padding-left: 45px;
-  // }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-// .logo__text {
-//   @media (min-width: $desktop) {
-//     width: 118px;
-//     height: 21px;
-//     margin-left: 10px;
-//   }
-// }
+.logo__text {
+  // flex-grow: 1;
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
