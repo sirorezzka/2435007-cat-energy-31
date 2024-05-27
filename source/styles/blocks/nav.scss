@@ -4,7 +4,8 @@
   align-items: center;
   flex-grow: 1;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
+  background-color: $primary-bg;
 
   @media (min-width: $tablet) {
     padding-top: 25px;
@@ -12,7 +13,7 @@
 
   @media (min-width: $desktop) {
     padding-top: 55px;
-    border: 1px solid red;
+    background: none;
   }
 }
 
@@ -26,30 +27,31 @@
   padding: 0;
   margin: 0;
   z-index: 2;
-  position: absolute;
-  background-color: $primary-bg;
-  top: 100%;
-  left: 0;
-  width: 100vw;
   display: none;
+  // position: absolute;
+  // background-color: $primary-bg;
+  // top: 100%;
+  // left: 0;
+  // width: 100vw;
+  // display: none;
 
 
   @media (min-width: $tablet) {
-    display: flex;
-    align-items: end;
-    gap: 34px;
     font-size: 18px;
-    top: 40px;
-    left: 39%;
+    line-height: 24px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: start;
+    gap: 33px;
+    min-width: 440px;
+    // padding: 10px 0;
   }
 
   @media (min-width: $desktop) {
+    max-width: 600px;
     font-size: 20px;
-    line-height: 30px;
-    top: 40px;
-    left: 39%;
-    background: 0;
-    border: 1px solid red;
+    line-height: 20px;
   }
 
   &--open {
@@ -71,7 +73,7 @@
 
 .nav__item {
   border-top: $tertiary-border;
-  padding: 22px 0;
+  // padding: 22px 0;
   text-align: center;
 
   @media (min-width: $tablet) {
@@ -84,7 +86,7 @@
 .nav__link {
   text-decoration: none;
   color: $secondary-color;
-  padding-bottom: 8px;
+  // padding-bottom: 8px;
 
   @media (min-width: $desktop) {
     color: #ffffff;
@@ -95,12 +97,35 @@
 
     @media (min-width: $tablet) {
       border-bottom: 2px solid $accient-color;
+      padding: 6px 0;
     }
 
     @media (min-width: $desktop) {
       border-bottom: 2px solid #ffffff;
       padding: 8px 0;
     }
+  }
+
+  &--current-accient {
+    border-bottom: none;
+
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $accient-color;
+      padding: 6px 0;
+    }
+
+    @media (min-width: $desktop) {
+      border-bottom: 2px solid $accient-color;
+      padding: 8px 0;
+    }
+  }
+}
+
+.nav__link--accient {
+  text-decoration: none;
+
+  @media (min-width: $desktop) {
+    color: $secondary-color;
   }
 }
 

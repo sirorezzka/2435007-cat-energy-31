@@ -1,5 +1,5 @@
 .slider {
-  position: relative;
+  // position: relative;
 }
 
 .slider__button {
@@ -13,7 +13,7 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 50%;
 
   &::before {
     content: "";
@@ -42,4 +42,44 @@
     mask-size: 24px 18px;
     mask-repeat: no-repeat;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $accient-color;
+
+    &::before {
+      border: 2px solid $accient-color;
+    }
+
+    &::after {
+      background-color: $accient-color;
+    }
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 0.3);
+
+    &::before {
+      border: 2px solid rgba(104, 183, 56, 0.3);
+    }
+
+    &::after {
+      background-color: rgba(104, 183, 56, 0.3);
+    }
+  }
+}
+
+.slider__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slider__image--state-before {
+  object-position: left;
+}
+
+.slider__image--state-after {
+  object-position: right;
 }

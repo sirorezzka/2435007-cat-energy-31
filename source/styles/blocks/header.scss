@@ -2,15 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 65px;
   border-bottom: $tertiary-border;
   position: relative;
 
   @media (min-width: $tablet) {
-    border-bottom: none;
-  }
-
-  @media (min-width: $desktop) {
     border-bottom: none;
   }
 }
