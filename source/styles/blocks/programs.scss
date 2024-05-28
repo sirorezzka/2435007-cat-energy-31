@@ -2,10 +2,24 @@
 
 }
 
+.programs__container {
+  // padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+  }
+}
+
 .programs__list {
   list-style-type: none;
   padding: 0 0 20px;
-  margin: 20px 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -22,12 +36,47 @@
 }
 
 .programs__item {
+  display: grid;
+  grid-template-areas:
+    "icon    title"
+    "content content"
+    "button  button";
+  grid-template-columns: 70px 1fr;
+  min-height: 266px;
+  padding: 24px 20px 18px;
   background-color: $secondary-bg;
   padding: 20px;
 
   @media (min-width: $desktop) {
     max-width: 570px;
   }
+
+  @media (min-width: $tablet) {
+    grid-template-areas:
+      "title   icon"
+      "content content"
+      "button  button";
+    grid-template-columns: 340px 1fr;
+    padding: 77px 0 53px 52px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-areas:
+      "icon    title"
+      "content content"
+      "button  button";
+    grid-template-columns: 162px 1fr;
+    padding: 47px 61px 55px 52px;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: relative;
+  //   grid-area: icon;
+  //   display: block;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 
   &--slim {
     &::before {
@@ -39,6 +88,21 @@
       width: 50px;
       height: 53px;
       display: block;
+      margin: -3px 0 0;
+
+      @media (min-width: $tablet) {
+        width: 200px;
+        height: 211px;
+        margin: 4px 0 0 53px;
+        background-size: 200px 211px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 100px;
+        height: 106px;
+        margin: -6px 0 0;
+        background-size: 100px 106px;
+      }
     }
   }
 
@@ -52,40 +116,84 @@
       width: 67px;
       height: 50px;
       display: block;
+
+      @media (min-width: $tablet) {
+        width: 268px;
+        height: 200px;
+        margin-left: 19px;
+        background-size: 268px 200px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 134px;
+        height: 100px;
+        background-size: 134px 100px;
+      }
     }
   }
+}
 
-  .programs__item-link {
-    font-family: $secondary-font-family;
-    font-size: 16px;
-    line-height: 16px;
+.programs__item-header {
+  grid-area: title;
+  margin: 6px 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 24px;
+  }
+}
+
+.programs__item-link {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 16px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  grid-area: button;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  max-width: max-content;
+
+  &::after {
+    content: "";
+    background-color: $secondary-color;
+    width: 24px;
+    height: 12px;
+    transition: mask-position 0.3s ease;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-position: 100%;
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    display: block;
+    margin-left: 15px;
+  }
+
+  &:hover::after {
+    mask-position: left center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__item-text {
+  grid-area: content;
+  margin: 0 0 15px;
+  padding: 0 13px 23px 0;
+  border-bottom: $secondary-border;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 0 48px;
+    border-bottom: none;
     color: $secondary-color;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    &::after {
-      content: "";
-      background-color: $secondary-color;
-      width: 24px;
-      height: 12px;
-      // transition: background-color 0.3s linear, color 0.3s linear;
-      mask-image: url("../../icons/stack.svg#arrow");
-      mask-position: 100%;
-      mask-size: 24px 12px;
-      mask-repeat: no-repeat;
-      display: inline-block;
-      margin-left: 15px;
-    }
-
-    @media (min-width: $tablet) {
-      font-size: 20px;
-      line-height: 29px;
-    }
-  }
-
-  .programs__item-text {
-    @media (min-width: $tablet) {
-      color: $secondary-color;
-    }
   }
 }

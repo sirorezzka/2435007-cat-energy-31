@@ -1,3 +1,27 @@
 .header {
-  // position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $tertiary-border;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 55px;
+  }
+
 }
