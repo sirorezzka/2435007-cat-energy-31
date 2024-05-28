@@ -14,7 +14,6 @@
   @media (min-width: $desktop) {
     padding-top: 55px;
     background: none;
-
   }
 }
 
@@ -29,13 +28,18 @@
   margin: 0;
   z-index: 2;
   display: none;
-  // position: absolute;
-  // background-color: $primary-bg;
-  // top: 100%;
-  // left: 0;
-  // width: 100vw;
-  // display: none;
 
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+  }
+
+  &:active {
+    border-bottom: 2px solid $accient-color;
+    padding: 6px 0;
+    color: $secondary-color;
+  }
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -47,7 +51,6 @@
     gap: 33px;
     min-width: 440px;
     // padding: 10px 0;
-
   }
 
   @media (min-width: $desktop) {
@@ -83,14 +86,12 @@
     border: none;
     display: inline-block;
     padding: 0;
-
   }
 }
 
 .nav__link {
   text-decoration: none;
   color: $secondary-color;
-  // padding-bottom: 8px;
 
 
   @media (min-width: $desktop) {
@@ -129,7 +130,19 @@
 .nav__link--accient {
   text-decoration: none;
 
-  @media (min-width: $desktop) {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+  }
+
+  &:active {
+    border-bottom: 2px solid $accient-color;
+    padding: 6px 0;
+    color: $secondary-color;
+  }
+
+  @media (min-width: $tablet) {
     color: $secondary-color;
   }
 }
