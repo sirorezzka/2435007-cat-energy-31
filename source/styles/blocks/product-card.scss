@@ -5,6 +5,7 @@
   grid-template-rows: min-content 1fr min-content;
   padding: 20px 20px 25px;
   border-top: 1px solid $tertiary-border-color;
+
   // border: 1px solid red;
 
   @media (min-width: $tablet) {
@@ -71,6 +72,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -100%);
+
   }
 }
 

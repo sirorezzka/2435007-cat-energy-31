@@ -19,6 +19,7 @@
   padding: 0 0 20px;
   margin-bottom: 0;
   margin-top: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -44,6 +45,11 @@
   min-height: 266px;
   padding: 24px 20px 18px;
   background-color: $secondary-bg;
+  padding: 20px;
+
+  @media (min-width: $desktop) {
+    max-width: 570px;
+  }
 
   @media (min-width: $tablet) {
     grid-template-areas:

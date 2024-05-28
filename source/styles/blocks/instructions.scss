@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   // flex-flow: wrap;
+
   justify-content: space-between;
   gap: 20px;
 
@@ -35,6 +36,7 @@
     flex-direction: column;
     // display: block;
     // padding: 40px 0;
+
   }
 
 
@@ -45,6 +47,7 @@
     background-repeat: no-repeat;
     min-width: 60px;
     min-height: 60px;
+
     display: block;
 
     @media (min-width: $tablet) {

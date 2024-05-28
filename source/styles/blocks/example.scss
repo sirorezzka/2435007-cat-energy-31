@@ -3,6 +3,7 @@
   background-color: $accient-bg;
 
 
+
   @media (min-width: $tablet) {
     background-color: transparent;
     padding-bottom: 101px;
@@ -25,6 +26,7 @@
     background-color: $accient-bg;
     z-index: -1;
 
+
     @media (min-width: $tablet) {
       content: "";
       background-color: $accient-bg;
@@ -35,6 +37,7 @@
       // left: 10px;
     }
   }
+
 
   // @media (min-width: $tablet) {
   //   background-color: $primary-bg;
@@ -59,14 +62,17 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 436px;
+
   }
 }
 
 .example__content {
+
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   gap: 20px;
 
   @media (min-width: $tablet) {
@@ -79,7 +85,9 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+
     max-width: 436px;
+
   }
 }
 
@@ -87,17 +95,21 @@
   line-height: 40px;
   margin: 0;
 
+
   @media (min-width: $desktop) {
     padding-bottom: 76px;
   }
+
 }
 
 .example__text {
   font-family: $primary-font-family;
   color: $primary-color;
+
   padding-top: 42px;
   padding-bottom: 6px;
   margin: 0;
+
 
 
   @media (min-width: $tablet) {
@@ -126,10 +138,19 @@
   }
 }
 
+.example__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+}
+
 .example__item {
   list-style-type: none;
   border: $secondary-border;
   border-radius: 4px;
+
   min-height: 56px;
   width: 124px;
   display: block;
@@ -139,6 +160,7 @@
     width: 162px;
     min-height: 72px;
   }
+
 }
 
 .example__item-header {
@@ -163,6 +185,7 @@
   line-height: 12px;
   color: $primary-color;
   text-align: center;
+
   text-transform: lowercase;
   background-color: $accient-bg;
   background-size: 87px 24px;
@@ -173,6 +196,7 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
+
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -228,4 +252,8 @@
   @media (min-width: $desktop) {
     grid-area: 1/2/3/3;
   }
+}
+
+.example__slider {
+  z-index: 1;
 }
