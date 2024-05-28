@@ -100,6 +100,8 @@
 
   &--current {
     border-bottom: none;
+    color: $secondary-color;
+    text-decoration: none;
 
     @media (min-width: $tablet) {
       border-bottom: 2px solid $accient-color;
@@ -109,6 +111,7 @@
     @media (min-width: $desktop) {
       border-bottom: 2px solid #ffffff;
       padding: 8px 0;
+      color: #ffffff;
     }
   }
 
