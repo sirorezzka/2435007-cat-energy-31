@@ -3,22 +3,21 @@
 }
 
 .programs__container {
-  // padding-top: 20px;
+  padding-top: 0;
 
   @media (min-width: $tablet) {
     padding-top: 0;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 82px;
+    padding-top: 62px;
   }
 }
 
 .programs__list {
   list-style-type: none;
   padding: 0 0 20px;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin: 0;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +42,6 @@
     "button  button";
   grid-template-columns: 70px 1fr;
   min-height: 266px;
-  padding: 24px 20px 18px;
   background-color: $secondary-bg;
   padding: 20px;
 
@@ -116,6 +114,7 @@
       width: 67px;
       height: 50px;
       display: block;
+      margin-left: -10px;
 
       @media (min-width: $tablet) {
         width: 268px;
@@ -135,10 +134,14 @@
 
 .programs__item-header {
   grid-area: title;
-  margin: 6px 0 0;
+  margin: 10px 0 0;
   padding: 0;
 
   @media (min-width: $tablet) {
+    margin: 0 0 24px;
+  }
+
+  @media (min-width: $desktop) {
     margin: 0 0 24px;
   }
 }
@@ -155,6 +158,7 @@
   gap: 15px;
   align-items: center;
   max-width: max-content;
+  margin-top: 20px;
 
   &::after {
     content: "";
@@ -181,19 +185,24 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: -9px;
   }
 }
 
 .programs__item-text {
   grid-area: content;
-  margin: 0 0 15px;
-  padding: 0 13px 23px 0;
+  // margin: 0 0 15px;
+  // padding: 0 13px 23px 0;
   border-bottom: $secondary-border;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 0 0 48px;
+    padding-bottom: 10px;
     border-bottom: none;
     color: $secondary-color;
+    max-width: 340px;
+    margin-top: -156px;
   }
 }

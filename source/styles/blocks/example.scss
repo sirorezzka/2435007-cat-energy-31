@@ -3,15 +3,16 @@
   background-color: $accient-bg;
 
 
-
   @media (min-width: $tablet) {
     background-color: transparent;
     padding-bottom: 101px;
   }
 
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
+  .example__wrap {
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &::after {
@@ -57,12 +58,12 @@
   align-items: start;
   padding-top: 25px;
   padding-bottom: 20px;
+  border: 1px solid red;
 
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
     max-width: 436px;
-
   }
 }
 
@@ -87,7 +88,6 @@
     align-items: start;
 
     max-width: 436px;
-
   }
 }
 
@@ -99,7 +99,6 @@
   @media (min-width: $desktop) {
     padding-bottom: 76px;
   }
-
 }
 
 .example__text {
@@ -109,7 +108,6 @@
   padding-top: 42px;
   padding-bottom: 6px;
   margin: 0;
-
 
 
   @media (min-width: $tablet) {
@@ -160,7 +158,6 @@
     width: 162px;
     min-height: 72px;
   }
-
 }
 
 .example__item-header {
