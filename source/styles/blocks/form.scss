@@ -4,4 +4,43 @@
   line-height: 29px;
   text-transform: uppercase;
   color: $primary-color;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+  min-width: 280px;
+  margin-bottom: 16px;
+  padding: 13px;
+
+  @media (min-width: $tablet) {
+    min-width: 376px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 496px;
+  }
+
+  &:hover {
+    border: $secondary-border;
+  }
+
+  &:focus {
+    border: 2px solid $primary-color;
+  }
+
+  &:active {
+    border: 1px solid #e7e7e7;
+  }
+}
+
+.form__control--error {
+  border: 2px solid $error-color;
+}
+
+.form__button {
+  padding: 15px 69px;
+
+  @media (min-width: $tablet) {
+    padding: 15px 82px;
+    max-height: 56px;
+    min-width: 256px;
+  }
 }

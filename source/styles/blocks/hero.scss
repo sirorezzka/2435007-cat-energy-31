@@ -138,6 +138,8 @@
   z-index: 2;
   position: relative;
   margin-bottom: 20px;
+  // display: grid;
+  // grid-column: 1/-1;
 
   @media (min-width: $tablet) {
     // order: 1;

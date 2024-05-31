@@ -1,10 +1,15 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.catalog__container {
+  // border: 1px solid red;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  // border: 1px solid red;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -23,4 +28,22 @@
 //   @media (min-width: $tablet) {
 //     padding: 0 37px 40px;
 //   }
+// }
+
+.catalog__button {
+  min-width: 280px;
+
+  @media (min-width: $tablet) {
+    min-width: 250px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 169px;
+  }
+}
+
+// .catalog__button--accent {
+//   display: grid;
+//   grid-column: 1/-1;
 // }
