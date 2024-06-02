@@ -7,7 +7,7 @@
   text-align: left;
   border: 1px solid #e7e7e7;
   min-width: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   padding: 13px;
 
   @media (min-width: $tablet) {
@@ -36,6 +36,7 @@
 }
 
 .form__button {
+  width: 100%;
   padding: 15px 69px;
 
   @media (min-width: $tablet) {

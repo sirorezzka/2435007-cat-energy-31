@@ -17,18 +17,11 @@
 .logo__text {
   display: flex;
   align-self: center;
-  // margin-left: 40px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
     margin: 0;
     flex-grow: 1;
-  }
-
-  @media (min-width: $desktop) {
-    // width: 118px;
-    // height: 21px;
-    // margin-left: 14px;
   }
 }
 

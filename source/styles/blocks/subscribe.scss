@@ -1,18 +1,37 @@
-.subscribe__content {
-  // border: 1px solid red;
+.subscribe {
+  margin-top: 35px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 100px;
+  }
 }
 
 .subscribe__title {
   text-transform: none;
+  position: relative;
+  width: fit-content;
+  background: $primary-bg;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
 
   @media (min-width: $tablet) {
     font-size: 32px;
     line-height: 32px;
+    padding-left: 40px;
+    box-shadow: 0 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
   }
 
   @media (min-width: $desktop) {
     font-size: 40px;
-    line-height: 4px;
+    line-height: 40px;
+    padding-left: 0;
+    box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
   }
 }
 
@@ -22,17 +41,22 @@
   line-height: 24px;
   color: $secondary-color;
   text-align: center;
+  margin-top: 26px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet) {
     font-size: 24px;
     line-height: 32px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 66px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop) {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 70px;
   }
 }
 
@@ -40,52 +64,11 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
-  // @media (min-width: $desktop) {
-  //   margin: 0 235px 104px;
-  // }
+  @media (min-width: $desktop) {
+    margin: 0 235px 104px;
+  }
 }
-
-// .subscribe__control {
-//   font-family: $secondary-font-family;
-//   font-size: 20px;
-//   line-height: 29px;
-//   text-transform: uppercase;
-//   color: $primary-color;
-//   text-align: left;
-//   border: 1px solid #e7e7e7;
-//   min-width: 280px;
-//   margin-bottom: 16px;
-//   padding: 13px;
-
-//   @media (min-width: $tablet) {
-//     min-width: 376px;
-//   }
-
-//   @media (min-width: $desktop) {
-//     min-width: 496px;
-//   }
-
-//   &:hover {
-//     border: $secondary-border;
-//   }
-
-//   &:focus {
-//     border: 2px solid $primary-color;
-//   }
-
-//   &:active {
-//     border: 1px solid #e7e7e7;
-//   }
-// }
-
-// .subscribe__button {
-//   padding: 15px 69px;
-
-//   @media (min-width: $tablet) {
-//     padding: 15px 82px;
-//     max-height: 56px;
-//     min-width: 256px;
-//   }
-// }

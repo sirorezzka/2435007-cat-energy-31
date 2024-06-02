@@ -1,12 +1,4 @@
-
 .contacts {
-}
-
-.contacts__container {
-  z-index: 2;
-  background-color: $primary-bg;
-  width: 100%;
-  margin: 0;
   position: relative;
 }
 
@@ -18,15 +10,15 @@
   @media (min-width: $desktop) {
     display: block;
     position: absolute;
-    left: 110px;
     top: 95px;
+    background-color: $primary-bg;
+    z-index: 2;
   }
 }
 
 .contacts__content--accient {
   @media (min-width: $desktop) {
     background-color: $primary-bg;
-
   }
 }
 
@@ -55,6 +47,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
+    max-width: 220px;
   }
 }
 
@@ -85,21 +78,22 @@
 
 .contacts__image {
   width: 100%;
-  height: 362px;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet) {
     height: 400px;
   }
 }
 
-.contacts iframe {
+.contacts__map iframe {
   z-index: 2;
   width: 100%;
-  height: 362px;
+  height: 100%;
   border: 0;
+  // display: none;
 
   @media (min-width: $tablet) {
     height: 400px;
   }
-
 }

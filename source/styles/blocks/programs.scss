@@ -1,7 +1,3 @@
-.programs {
-
-}
-
 .programs__container {
   padding-top: 0;
 
@@ -18,7 +14,6 @@
   list-style-type: none;
   padding: 0 0 20px;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -30,6 +25,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: row;
+    justify-content: space-between;
     gap: 80px;
   }
 }
@@ -45,10 +41,6 @@
   background-color: $secondary-bg;
   padding: 20px;
 
-  @media (min-width: $desktop) {
-    max-width: 570px;
-  }
-
   @media (min-width: $tablet) {
     grid-template-areas:
       "title   icon"
@@ -63,71 +55,63 @@
       "icon    title"
       "content content"
       "button  button";
-    grid-template-columns: 162px 1fr;
+    grid-template-columns: 257px 1fr;
     padding: 47px 61px 55px 52px;
   }
+}
 
-  // &::before {
-  //   content: "";
-  //   position: relative;
-  //   grid-area: icon;
-  //   display: block;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  // }
+.programs__item--slim {
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-image: url("../../icons/stack.svg#cat");
+    background-size: 50px 53px;
+    width: 50px;
+    height: 53px;
+    display: block;
+    margin: -3px 0 0;
 
-  &--slim {
-    &::before {
-      content: "";
-      background-repeat: no-repeat;
-      background-position: cover;
-      background-image: url("../../icons/stack.svg#cat");
-      background-size: 50px 53px;
-      width: 50px;
-      height: 53px;
-      display: block;
-      margin: -3px 0 0;
+    @media (min-width: $tablet) {
+      width: 200px;
+      height: 211px;
+      margin: 4px 0 0 53px;
+      background-size: 200px 211px;
+    }
 
-      @media (min-width: $tablet) {
-        width: 200px;
-        height: 211px;
-        margin: 4px 0 0 53px;
-        background-size: 200px 211px;
-      }
-
-      @media (min-width: $desktop) {
-        width: 100px;
-        height: 106px;
-        margin: -6px 0 0;
-        background-size: 100px 106px;
-      }
+    @media (min-width: $desktop) {
+      width: 100px;
+      height: 106px;
+      margin: -6px 0 0;
+      background-size: 100px 106px;
     }
   }
+}
 
-  &--fat {
-    &::before {
-      content: "";
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-image: url("../../icons/stack.svg#gepard");
-      background-size: 67px 50px;
-      width: 67px;
-      height: 50px;
-      display: block;
-      margin-left: -10px;
+.programs__item--fat {
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("../../icons/stack.svg#gepard");
+    background-size: 67px 50px;
+    width: 67px;
+    height: 50px;
+    display: block;
+    margin-left: -10px;
 
-      @media (min-width: $tablet) {
-        width: 268px;
-        height: 200px;
-        margin-left: 19px;
-        background-size: 268px 200px;
-      }
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 200px;
+      margin-left: 19px;
+      background-size: 268px 200px;
+    }
 
-      @media (min-width: $desktop) {
-        width: 134px;
-        height: 100px;
-        background-size: 134px 100px;
-      }
+    @media (min-width: $desktop) {
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+      margin-left: -25px;
     }
   }
 }
@@ -142,7 +126,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 24px;
+    margin: 30px 0 0;
+    min-width: 210px;
   }
 }
 
@@ -191,8 +176,6 @@
 
 .programs__item-text {
   grid-area: content;
-  // margin: 0 0 15px;
-  // padding: 0 13px 23px 0;
   border-bottom: $secondary-border;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -204,5 +187,11 @@
     color: $secondary-color;
     max-width: 340px;
     margin-top: -156px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 40px 0 0;
+    max-width: 500px;
+    padding-bottom: 36px;
   }
 }

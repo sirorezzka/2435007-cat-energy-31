@@ -6,6 +6,9 @@
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="../source/fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="../source/fonts/lato/Lato-Regular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180x180.png">
@@ -19,7 +22,7 @@
     <nav class="nav container">
       <a class="logo" href="#">
         <picture>
-          <source media="(min-width:1200px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
+          <source media="(min-width:1440px)" width="70" height="59" srcset="images/logo-desctop.svg" type="image/svg+xml">
           <source media="(min-width:768px)" width="60" height="50" srcset="images/logo-tablet.svg" type="image/svg+xml">
           <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании Кэт Энерджи.">
         </picture>
@@ -50,7 +53,7 @@
           <p class="hero__text">Занялся собой? Займись котом!</p>
           <div class="hero__pictyre">
             <picture>
-              <source media="(min-width:1200px)" width="552" height="499" srcset="images/hero-product@1x.png 1x, images/hero-product@2x.png 2x" type="image/png">
+              <source media="(min-width:1440px)" width="552" height="499" srcset="images/hero-product@1x.png 1x, images/hero-product@2x.png 2x" type="image/png">
               <source media="(min-width:768px)" width="709" height="609" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png">
               <img class="hero__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Кэт Энерджи.">
             </picture>
@@ -134,16 +137,14 @@
         </div>
         <div class="example__slider slider">
           <picture>
-            <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
+            <source media="(min-width:1440px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
             <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" type="image/png">
-
             <img class="example__slider-image slider__image slider__image--state-before" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
 
           </picture>
           <picture>
-            <source media="(min-width:1200px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
+            <source media="(min-width:1440px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
             <source media="(min-width:768px)" width="560" height="512" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" type="image/png">
-
             <img class="example__slider-image slider__image slider__image--state-after" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
 
           </picture>
@@ -156,7 +157,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
 
-      <div class="contacts__container">
+      <div class="contacts__container container">
         <div class="contacts__content">
           <div class="contacts__description">
             <h2 class="contacts__title title-h3">Приглашаем к сотрудничеству дилеров!</h2>
