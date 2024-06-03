@@ -2,6 +2,7 @@
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
@@ -29,7 +30,6 @@
   padding: 0;
   margin: 0;
   z-index: 2;
-  display: none;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -48,18 +48,23 @@
     line-height: 20px;
   }
 
-  &--open {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: $primary-bg;
-    z-index: 2;
-    width: 100vw;
-    display: block;
+  @media (max-width: $mobile-only) {
+    display: none;
 
+    &--open {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $primary-bg;
+      z-index: 2;
+      width: 100vw;
+      display: block;
+    }
 
-    @media (min-width: $tablet) {
-      display: none;
+    &--nojs {
+      display: block;
+      min-width: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -133,19 +138,18 @@
   }
 
   &:active {
-    opacity: none;
+    opacity: 0;
   }
-
 
   &--close {
     background-image: url("../../icons/stack.svg#close-mobile");
   }
 
+  &--nojs {
+    visibility: hidden;
+  }
+
   @media (min-width: $tablet) {
     display: none;
   }
-}
-
-.nav--nojs {
-  width: 100%;
 }
