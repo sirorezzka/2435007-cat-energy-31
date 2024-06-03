@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .promo {
   padding: 58px 0 43px;
   background-repeat: no-repeat;
@@ -32,7 +34,6 @@
     height: 80px;
     display: block;
     margin: 0 auto;
-    // position: absolute;
 
     @media (min-width: $tablet) {
       margin-left: 79px;

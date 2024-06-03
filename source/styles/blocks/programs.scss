@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .programs__container {
   padding-top: 0;
 
@@ -64,7 +66,6 @@
   &::before {
     content: "";
     background-repeat: no-repeat;
-    background-position: cover;
     background-image: url("../../icons/stack.svg#cat");
     background-size: 50px 53px;
     width: 50px;
@@ -92,7 +93,6 @@
   &::before {
     content: "";
     background-repeat: no-repeat;
-    background-position: 50%;
     background-image: url("../../icons/stack.svg#gepard");
     background-size: 67px 50px;
     width: 67px;
@@ -148,19 +148,19 @@
   &::after {
     content: "";
     background-color: $secondary-color;
-    width: 24px;
+    min-width: 32px;
     height: 12px;
     transition: mask-position 0.3s ease;
     mask-image: url("../../icons/stack.svg#arrow");
-    mask-position: 100%;
-    mask-size: 24px 12px;
+    mask-position: -8px;
+    // mask-size: 24px 12px;
     mask-repeat: no-repeat;
     display: block;
     margin-left: 15px;
   }
 
   &:hover::after {
-    mask-position: left center;
+    mask-position: 0;
   }
 
   &:active {

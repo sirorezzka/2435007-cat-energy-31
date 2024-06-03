@@ -2,7 +2,6 @@
 @use "../common/variables.scss";
 
 .catalog__container {
-  // border: 1px solid red;
   @media (min-width: $desktop) {
     padding-top: 20px;
   }
@@ -26,7 +25,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // border: 1px solid red;
 
   @media (min-width: $tablet) {
     display: grid;

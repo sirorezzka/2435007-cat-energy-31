@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .title-with-line {
   &::before {
     content: "";
@@ -18,5 +20,26 @@
     @media (min-width: $desktop) {
       top: 18px;
     }
+  }
+}
+
+.title-line-secondary {
+  width: fit-content;
+  background: $primary-bg;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+    box-shadow: 0 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
+    box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
   }
 }

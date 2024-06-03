@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .form__control {
   font-family: $secondary-font-family;
   font-size: 20px;
@@ -6,7 +8,7 @@
   color: $primary-color;
   text-align: left;
   border: 1px solid #e7e7e7;
-  min-width: 280px;
+  width: 100%;
   margin-bottom: 14px;
   padding: 13px;
 
@@ -29,6 +31,17 @@
   &:active {
     border: 1px solid #e7e7e7;
   }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      outline: none;
+      cursor: default;
+    }
+  }
 }
 
 .form__control--error {
@@ -40,7 +53,6 @@
   padding: 15px 69px;
 
   @media (min-width: $tablet) {
-    padding: 15px 82px;
     max-height: 56px;
     min-width: 256px;
   }

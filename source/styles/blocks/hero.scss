@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .hero {
   position: relative;
 
@@ -44,10 +46,8 @@
 }
 
 .hero__content {
-  // width: 100%;
   display: flex;
   flex-direction: column;
-  // flex-flow: wrap;
   align-items: center;
   text-align: center;
   padding-top: 25px;
@@ -99,8 +99,8 @@
     font-size: 20px;
     line-height: 20px;
     color: $secondary-color;
-    margin: 0;
     z-index: 1;
+    margin: 0;
     margin-bottom: 50px;
   }
 
@@ -109,7 +109,7 @@
   }
 }
 
-.hero__pictyre {
+.hero__picture {
   @media (min-width: $tablet) {
     order: 2;
     left: 76%;
@@ -141,7 +141,6 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
-    // order: 1;
     font-size: 20px;
     padding: 14px 26px;
   }

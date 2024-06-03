@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .additional-product {
   border-top: $secondary-border;
 
@@ -17,6 +19,7 @@
 
 .additional-product__title {
   color: $quaternary-color;
+  font-weight: 400;
 
   @media (min-width: $tablet) {
     grid-area: 1 / 1 / 2 / 2;

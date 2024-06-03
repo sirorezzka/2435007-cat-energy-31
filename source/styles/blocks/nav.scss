@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -85,7 +87,7 @@
   }
 
   &:active {
-    opacity: none;
+    opacity: 0;
     border-bottom: 2px solid $accient-color;
     padding-bottom: 8px;
   }
@@ -94,9 +96,10 @@
     opacity: 0.3;
   }
 
-
-  @media (min-width: $desktop) {
-    color: #ffffff;
+  &--light {
+    @media (min-width: $desktop) {
+      color: #ffffff;
+    }
   }
 
   &--current {
@@ -106,49 +109,12 @@
       border-bottom: 2px solid $accient-color;
       padding: 6px 0;
     }
-
-    @media (min-width: $desktop) {
-      border-bottom: 2px solid #ffffff;
-      padding: 8px 0;
-    }
-  }
-
-  &--current-accient {
-    border-bottom: none;
-
-    @media (min-width: $tablet) {
-      border-bottom: 2px solid $accient-color;
-      padding: 6px 0;
-    }
-
-    @media (min-width: $desktop) {
-      border-bottom: 2px solid $accient-color;
-      padding: 8px 0;
-    }
   }
 }
 
-.nav__link--accient {
-  text-decoration: none;
-  color: $secondary-color;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: none;
-    border-bottom: 2px solid $accient-color;
-    padding-bottom: 8px;
-  }
-
-  &:visited {
-    opacity: 0.3;
-  }
-
+.nav__link--light.nav__link--current {
   @media (min-width: $desktop) {
-    color: $secondary-color;
+    border-bottom: 2px solid #ffffff;
   }
 }
 
@@ -178,4 +144,8 @@
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.nav--nojs {
+  width: 100%;
 }

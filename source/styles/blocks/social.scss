@@ -1,7 +1,10 @@
+@use "../common/variables.scss";
+
 .social {
   background-color: $secondary-bg;
   list-style-type: none;
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   border-top: $primary-border;
   border-bottom: $primary-border;

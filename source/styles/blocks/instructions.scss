@@ -1,10 +1,10 @@
+@use "../common/variables.scss";
+
 .instructions {
   padding-bottom: 34px;
 }
 
 .instructions__content {
-  // padding-top: 22px;
-
   @media (min-width: $tablet) {
     border-bottom: $tertiary-border;
   }
@@ -20,6 +20,10 @@
   @media (min-width: $tablet) {
     margin-top: 50px;
     margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 55px;
   }
 }
 
@@ -39,8 +43,7 @@
   }
 
   @media (min-width: $desktop) {
-    flex-wrap: nowrap;
-    gap: 77px;
+    gap: 73px;
   }
 }
 
@@ -136,7 +139,6 @@
 
 .instructions__item-text {
   margin: 0;
-  // padding: 2px 0 4px;
   word-break: break-word;
 
   @media (min-width: $tablet) {

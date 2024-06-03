@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .product-card {
   position: relative;
   display: grid;
@@ -98,7 +100,6 @@
 
 
   @media (min-width: $tablet) {
-    border-bottom: none;
     border: 1px solid #f2f2f2;
     margin: 72px 0 0;
     background: none;
@@ -109,7 +110,6 @@
 
   @media (min-width: $desktop) {
     margin: 75px 0 0;
-    height: 435px;
   }
 
   &::before {
@@ -132,8 +132,6 @@
       mask-size: 60px 60px;
       left: 41%;
       top: 50px;
-      // margin: 0 auto 50px;
-      // padding: 0;
     }
 
     @media (min-width: $desktop) {

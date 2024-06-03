@@ -1,3 +1,5 @@
+@use "../common/variables.scss";
+
 .additional-products {
   margin-top: 25px;
 
@@ -64,23 +66,6 @@
   text-transform: none;
   margin: 0;
   position: relative;
-  width: fit-content;
-  background: $primary-bg;
-  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
-
-  @media (min-width: $tablet) {
-    font-size: 32px;
-    line-height: 32px;
-    padding-left: 40px;
-    box-shadow: 0 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 40px;
-    line-height: 40px;
-    padding-left: 0;
-    box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
-  }
 }
 
 .additional-products__list {
