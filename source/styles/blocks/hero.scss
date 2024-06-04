@@ -110,12 +110,15 @@
 }
 
 .hero__picture {
+  margin-bottom: 4px;
+
   @media (min-width: $tablet) {
     order: 2;
     left: 76%;
     top: 16px;
     margin-top: -103px;
     margin-left: -90px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {

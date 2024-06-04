@@ -4,21 +4,22 @@
   margin-top: 25px;
 
   @media (min-width: $tablet) {
-    margin-top: 74px;
+    margin-top: 80px;
   }
 }
 
 .additional-products__container {
   padding-top: 24px;
 
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+  }
+
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     gap: 80px;
-  }
-
-  @media (min-width: $desktop) {
     padding-top: 80px;
   }
 }

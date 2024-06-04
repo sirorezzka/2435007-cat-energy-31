@@ -1,7 +1,11 @@
 @use "../common/variables.scss";
 
 .instructions {
-  padding-bottom: 34px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 34px;
+  }
 }
 
 .instructions__content {
@@ -16,6 +20,7 @@
 
 .instructions__title {
   margin-bottom: 43px;
+  margin-top: 0;
 
   @media (min-width: $tablet) {
     margin-top: 50px;

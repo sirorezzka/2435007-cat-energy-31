@@ -18,6 +18,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+  }
 }
 
 .footer__logo {
