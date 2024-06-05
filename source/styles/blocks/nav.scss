@@ -46,6 +46,7 @@
     max-width: 600px;
     font-size: 20px;
     line-height: 20px;
+    gap: 0 33px;
   }
 
   @media (max-width: $mobile-only) {
@@ -86,24 +87,25 @@
   text-decoration: none;
   color: $secondary-color;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+  &:hover {
+    color: rgba($secondary-color, 0.6);
   }
 
   &:active {
-    opacity: 0;
-    border-bottom: 2px solid $accient-color;
-    padding-bottom: 8px;
-  }
-
-  &:visited {
-    opacity: 0.3;
+    color: rgba($secondary-color, 0.3);
   }
 
   &--light {
     @media (min-width: $desktop) {
       color: #ffffff;
+    }
+
+    &:hover {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
     }
   }
 

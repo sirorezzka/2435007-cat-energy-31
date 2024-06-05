@@ -1,10 +1,8 @@
 @use "../common/variables.scss";
 
 .additional-products {
-  margin-top: 25px;
-
   @media (min-width: $tablet) {
-    margin-top: 80px;
+    margin-top: 47px;
   }
 }
 
@@ -17,21 +15,22 @@
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 80px;
-    padding-top: 80px;
+    grid-template-columns: 1fr 245px;
+    grid-template-areas:
+      "section-title section-title"
+      "list          promo";
+    gap: 90px 80px;
   }
 }
 
 .additional-products__item {
   border-top: $secondary-border;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   padding-top: 10px;
 
   @media (min-width: $tablet) {
-    border: $secondary-border;
-    border-top: none;
+    border-right: $secondary-border;
+    border-left: $secondary-border;
     padding: 26px 38px 28px;
     margin-bottom: 0;
   }
@@ -45,11 +44,10 @@
 
 .additional-products__item:last-child {
   border-bottom: $secondary-border;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet) {
     border: $secondary-border;
-    border-top: none;
     padding: 26px 38px 28px;
     margin-bottom: 0;
   }
@@ -63,6 +61,7 @@
 }
 
 .additional-products__title {
+  grid-area: section-title;
   line-height: 24px;
   text-transform: none;
   margin: 0;
@@ -70,25 +69,42 @@
 }
 
 .additional-products__list {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  grid-area: list;
+  margin-top: 36px;
+  margin-bottom: 38px;
   list-style-type: none;
   padding: 0;
 
   @media (min-width: $tablet) {
-    margin-top: 55px;
+    margin-top: 84px;
     margin-bottom: 68px;
   }
 
   @media (min-width: $desktop) {
-    grid-area: 1 / 1 / 2 / 2;
     margin: 0;
   }
 }
 
 .additional-products__promo {
+  grid-area: promo;
+  min-height: 290px;
+  padding: 58px 58px 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    flex-flow: row wrap;
+    min-height: 200px;
+    padding: 57px 125px 57px 77px;
+  }
+
   @media (min-width: $desktop) {
-    grid-area: 1 / 2 / 2 / 3;
+    min-height: 288px;
+    flex-direction: column;
+    margin: 0;
+    padding: 56px 42px 43px;
   }
 }
 

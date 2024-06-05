@@ -1,7 +1,6 @@
 @use "../common/variables.scss";
 
 .promo {
-  padding: 58px 0 43px;
   background-repeat: no-repeat;
   background-position: center;
   background-image:
@@ -11,18 +10,9 @@
     "../../images/promo-mobile@2x.webp" type("image/webp") 2x,
     "../../images/promo-mobile@2x.png" type("image/png") 2x);
   background-size: cover;
-  width: 100%;
-  height: 290px;
-  z-index: -1;
-  display: block;
-  position: relative;
 
   @media (min-width: $tablet) {
     height: 200px;
-  }
-
-  @media (min-width: $desktop) {
-    height: 100%;
   }
 
   &::before {
@@ -32,16 +22,7 @@
     background-image: url("../../icons/stack.svg#icon-gift");
     width: 78px;
     height: 80px;
-    display: block;
-    margin: 0 auto;
-
-    @media (min-width: $tablet) {
-      margin-left: 79px;
-    }
-
-    @media (min-width: $desktop) {
-      margin-left: 110px;
-    }
+    z-index: 1;
   }
 }
 
@@ -52,19 +33,14 @@
   color: #ffffff;
   text-align: center;
   margin-top: 49px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet) {
     text-align: left;
-    margin-left: 77px;
-    position: absolute;
-    top: 70px;
-    left: 346px;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
-    top: 185px;
-    left: 66px;
-    margin: 0;
     text-align: center;
   }
 }
