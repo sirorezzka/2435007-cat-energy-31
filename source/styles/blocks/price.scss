@@ -1,0 +1,82 @@
+@use "../common/variables.scss";
+
+.price {
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.price__min {
+  max-width: 93px;
+  font-family: $primary-font-family;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.price__text {
+  margin: 0;
+}
+
+.price__text-min {
+  margin: 0;
+  font-size: 17px;
+}
+
+.price__accient {
+  margin: 0;
+  color: $price-color;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price__currency {
+  margin: 0;
+  font-family: $secondary-font-family;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.6;
+
+  @media (min-width: $tablet) {
+    font-size: 23px;
+  }
+}
+
+.price__received {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  background-color: #3c3e43;
+  padding-top: 25px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.price__received-text {
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  margin: 0;
+}
+
+.price__received-accient {
+  color: $price-color;
+}

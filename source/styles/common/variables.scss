@@ -1,30 +1,16 @@
 /* здесь используйте глобальные переменные */
-$primary-font-family: "Lato",sans-serif;
-$secondary-font-family: "Oswald", sans-serif;
-
-/* Цвета фона */
-$primary-bg: #ffffff;
-$secondary-bg: #f2f2f2;
-$accient-bg: #eaeaea;
+$primary-font-family: "Roboto",sans-serif;
+$secondary-font-family: "Open-Sans", sans-serif;
 
 /* Цвета проекта */
-$primary-color: #444444;
-$secondary-color: #000000;
-$tertiary-color: #111111;
-$quaternary-color: #222222;
-$slider-color: #666666;
-$accient-color: #68b738;
+$primary-color: #f91155;
+$secondary-color: #3c3e43;
+$tertiary-color: #ffffff;
+$price-color: #ff4b77;
+$accient-color: #ff7647;
 $error-color: #ff8282;
 
-/* Цвета бордеров */
-$primary-border-color: #d9d9d9;
-$secondary-border-color: #cdcdcd;
-$tertiary-border-color: #ebebeb;
-$primary-border: 1px solid $primary-border-color;
-$secondary-border: 1px solid $secondary-border-color;
-$tertiary-border: 1px solid $tertiary-border-color;
-$accient-border: 1px solid $accient-color;
 
 $tablet: 768px;
-$desktop: 1440px;
+$desktop: 1280px;
 $mobile-only: 768px - 1;

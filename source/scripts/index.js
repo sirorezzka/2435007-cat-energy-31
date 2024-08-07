@@ -1,9 +1,14 @@
-const nav = document.querySelector('.nav');
-const navButton = document.querySelector('.nav__button');
-const navList = document.querySelector('.nav__list');
-const map = document.querySelector('.contacts__map');
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('.room-card__button');
+  const div = document.querySelector('.room-card__container');
 
-nav.classList.remove('nav--nojs');
-navButton.classList.remove('nav__button--nojs');
-navList.classList.remove('nav__list--nojs');
-map.classList.remove('contacts__map--nojs');
+  button.addEventListener('click', () => {
+    if (div.classList.contains('room-card__container')) {
+      div.classList.remove('room-card__container');
+      div.classList.add('room-card__container--received');
+    } else {
+      div.classList.remove('room-card__container--received');
+      div.classList.add('room-card__container');
+    }
+  });
+});
