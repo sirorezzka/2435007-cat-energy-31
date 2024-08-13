@@ -2,6 +2,7 @@
 
 .room-card {
   color: $tertiary-color;
+  width: 100%;
 
   &:hover,
   &:focus,
@@ -48,14 +49,18 @@
 .room-card__container {
   position: relative;
   z-index: 1;
-  padding: 113px 24px 21px 21px;
+  padding: 24px 24px 21px 21px;
+  // padding: 113px 24px 21px 21px;
   background: linear-gradient(to top, rgba(10, 34, 64, 1), rgba(10, 34, 64, 0.1));
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.room-card__container--received {
+.room-card-received {
   position: relative;
-  padding: 24px 21px 21px;
+  padding: 113px 24px 21px 21px;
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -66,7 +71,6 @@
   line-height: 26px;
   color: $tertiary-color;
   font-weight: 600;
-  // margin: 0;
   margin-top: 113px;
 
 

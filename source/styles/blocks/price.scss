@@ -40,6 +40,7 @@
   color: $price-color;
   font-size: 20px;
   font-weight: 600;
+  word-break: break-all;
 }
 
 .price__currency {
@@ -59,7 +60,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // text-align: center;
   background-color: #3c3e43;
   padding-top: 25px;
   padding-bottom: 29px;
@@ -75,6 +75,7 @@
   font-family: $secondary-font-family;
   font-size: 14px;
   margin: 0;
+  padding: 0 21px;
 }
 
 .price__received-accient {
